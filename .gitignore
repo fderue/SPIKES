@@ -1,0 +1,14 @@
+*
+!*/
+!*.cpp
+!*.gitignore
+!*.cuda
+!*.h
+!*.txt
+!*.md
+!*.hpp
+!*.vcxproj
+!FeatureEngines
+!FunUtils
+!Slic
+!SLIC_CUDA
