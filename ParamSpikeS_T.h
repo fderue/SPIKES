@@ -7,7 +7,7 @@ Parameter of the tracker SPiKeS_T
 
 #pragma once
 
-#define DEBUG_MODE 0 //visual support for debug
+#define DEBUG_MODE 1 //visual support for debug
 #define NSPX_ROI0 30 //#initial spx in frame0's BB
 //#define SPX_DIAM_0 12 //or choose a constant size of spx instead (if uncomment)
 #define SPX_DIAM_MIN 4 //min size of spx allowed

@@ -138,7 +138,7 @@ int main(int argc, const char *argv[])
 
 int main(int argc, const char** argv)
 {
-	string nameVideo = "girl";
+	string nameVideo = "car4";
 	string pathV = "C:/Recherche_FX/video/TB_CVPR2013/" + nameVideo + "/img/";
 	string pathGnd = "C:/Recherche_FX/video/TB_CVPR2013/" + nameVideo + "/groundtruth_rect.txt";
 

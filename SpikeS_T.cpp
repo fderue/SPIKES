@@ -132,7 +132,7 @@ void SpikeS_T::track(Mat& frame)
 	extractSpikeS(frame);
 	resetMatches();
 	matchSpikeS();
-	estimatePos(); 
+	estimatePos();
 	if (checkPosUpdate()){
 		cout << "--- POSITION UPDATE : YES" << endl;
 		updatePos();
@@ -146,6 +146,10 @@ void SpikeS_T::track(Mat& frame)
 	m_State.x = m_position.x - m_State.width / 2;
 	m_State.y = m_position.y - m_State.height / 2;
 
+	//scale Estimation (not implemented)
+	float alpha = 0.1;
+	m_State.width = (1 - alpha)*m_State.width + alpha*m_State.width;
+	m_State.height = (1 - alpha)*m_State.height + alpha*m_State.height;
 	//update the StateEstimation (for comparison purpose)
 	StateEst.x = positionEst.x - m_State.width / 2;
 	StateEst.y = positionEst.y - m_State.height / 2;
