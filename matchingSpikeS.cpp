@@ -163,14 +163,17 @@ void SpikeS_T::constraintMatch()
 	}
 
 	// motion constraint
-	float thr_motion = norm(dPos) + THR_MOTION_FAC * l_spikesModel.back()->diamSpx;{
-		for (auto& spikes : l_spikesModel){
-			if (spikes->p_matched != nullptr && norm(spikes->p_matched->xy - spikes->xy) > thr_motion){
-				nMatchSpikeS--;
-				spikes->p_matched->p_matched = nullptr;
-				spikes->p_matched = nullptr;
-			}
+	//float thr_motion = norm(dPos) + THR_MOTION_FAC * l_spikesModel.back()->diamSpx;
+	float thr_motion = norm(dPos) + THR_MOTION_FAC * m_diam0;
+
+
+	for (auto& spikes : l_spikesModel){
+		if (spikes->p_matched != nullptr && norm(spikes->p_matched->xy - spikes->xy) > thr_motion){
+			nMatchSpikeS--;
+			spikes->p_matched->p_matched = nullptr;
+			spikes->p_matched = nullptr;
 		}
 	}
+	
 	
 }

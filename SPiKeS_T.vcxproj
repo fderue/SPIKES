@@ -127,13 +127,13 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\LibExtraCpp\opencv\buildVS13x64\install\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opencv\buildVS13x64\install\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;opencv_bgsegm310d.lib;opencv_calib3d310d.lib;opencv_ccalib310d.lib;opencv_core310d.lib;opencv_cudaarithm310d.lib;opencv_cudabgsegm310d.lib;opencv_cudacodec310d.lib;opencv_cudafeatures2d310d.lib;opencv_cudafilters310d.lib;opencv_cudaimgproc310d.lib;opencv_cudalegacy310d.lib;opencv_cudaobjdetect310d.lib;opencv_cudaoptflow310d.lib;opencv_cudastereo310d.lib;opencv_cudawarping310d.lib;opencv_cudev310d.lib;opencv_datasets310d.lib;opencv_face310d.lib;opencv_features2d310d.lib;opencv_flann310d.lib;opencv_highgui310d.lib;opencv_imgcodecs310d.lib;opencv_imgproc310d.lib;opencv_line_descriptor310d.lib;opencv_ml310d.lib;opencv_objdetect310d.lib;opencv_optflow310d.lib;opencv_photo310d.lib;opencv_reg310d.lib;opencv_rgbd310d.lib;opencv_saliency310d.lib;opencv_shape310d.lib;opencv_superres310d.lib;opencv_surface_matching310d.lib;opencv_text310d.lib;opencv_tracking310d.lib;opencv_ts310d.lib;opencv_video310d.lib;opencv_videoio310d.lib;opencv_videostab310d.lib;opencv_xfeatures2d310d.lib;opencv_ximgproc310d.lib;opencv_xobjdetect310d.lib;opencv_xphoto310d.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\LibExtraCpp\opencv\buildVS13x64\install\x64\vc12\lib;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opencv\buildVS13x64\install\x64\vc12\lib;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
@@ -170,7 +170,7 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\LibExtraCpp\opencv\buildVS13x64\install\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opencv\buildVS13x64\install\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
       <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
@@ -179,7 +179,7 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;opencv_bgsegm310.lib;opencv_calib3d310.lib;opencv_ccalib310.lib;opencv_core310.lib;opencv_cudaarithm310.lib;opencv_cudabgsegm310.lib;opencv_cudacodec310.lib;opencv_cudafeatures2d310.lib;opencv_cudafilters310.lib;opencv_cudaimgproc310.lib;opencv_cudalegacy310.lib;opencv_cudaobjdetect310.lib;opencv_cudaoptflow310.lib;opencv_cudastereo310.lib;opencv_cudawarping310.lib;opencv_cudev310.lib;opencv_datasets310.lib;opencv_face310.lib;opencv_features2d310.lib;opencv_flann310.lib;opencv_highgui310.lib;opencv_imgcodecs310.lib;opencv_imgproc310.lib;opencv_line_descriptor310.lib;opencv_ml310.lib;opencv_objdetect310.lib;opencv_optflow310.lib;opencv_photo310.lib;opencv_reg310.lib;opencv_rgbd310.lib;opencv_saliency310.lib;opencv_shape310.lib;opencv_superres310.lib;opencv_surface_matching310.lib;opencv_text310.lib;opencv_tracking310.lib;opencv_ts310.lib;opencv_video310.lib;opencv_videoio310.lib;opencv_videostab310.lib;opencv_xfeatures2d310.lib;opencv_ximgproc310.lib;opencv_xobjdetect310.lib;opencv_xphoto310.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\LibExtraCpp\opencv\buildVS13x64\install\x64\vc12\lib;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opencv\buildVS13x64\install\x64\vc12\lib;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"

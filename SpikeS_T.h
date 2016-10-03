@@ -37,6 +37,7 @@ using namespace cv;
 class SpikeS_T
 {
 private:
+	
 	//Images
 	Mat Frame0, Frame_t;
 	//Engines
@@ -81,6 +82,10 @@ private:
 	//For optimization
 	vector<float> v_rankedW_SpikeS, v_rankedW_Kp2F, v_rankedW_Kp2B;
 	Mat maskBB, maskAroundBB, maskSegment;
+
+	//Extra
+	float m_diam0;
+
 
 
 public:

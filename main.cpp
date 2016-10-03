@@ -10,7 +10,7 @@ MAKE_EXE : make executable for Matlab benchmark evaluation
 #include "SpikeS_T.h"
 
 
-#define MAKE_EXE 0 // if need a command line executable
+#define MAKE_EXE 1 // if need a command line executable
 
 using namespace cv;
 using namespace std;
@@ -138,7 +138,7 @@ int main(int argc, const char *argv[])
 
 int main(int argc, const char** argv)
 {
-	string nameVideo = "car4";
+	string nameVideo = "girl";
 	string pathV = "C:/Recherche_FX/video/TB_CVPR2013/" + nameVideo + "/img/";
 	string pathGnd = "C:/Recherche_FX/video/TB_CVPR2013/" + nameVideo + "/groundtruth_rect.txt";
 

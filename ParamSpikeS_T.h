@@ -68,7 +68,7 @@ Parameter of the tracker SPiKeS_T
 #define THR_MOTION_FAC 4 //motion constraint
 
 //Some FLAG
-#define REFINE_INIT 0 //activate grabcut for attempt of segmentation inside initial BB
+#define REFINE_INIT 1 //activate grabcut for attempt of segmentation inside initial BB
 #define PHI_UPDATE 1 //activate predictive factor
 #define VOTE_UPDATE 1 //activate adaptation of vote 
 #define F_INTERP_VOTE 0.1f // adaptive factor for vote

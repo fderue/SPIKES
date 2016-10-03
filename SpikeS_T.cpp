@@ -57,7 +57,7 @@ void SpikeS_T::initialize(Mat& frame0, Rect ROI0)
 	}
 #else
 	int NspxTmp = frame0.cols*frame0.rows / (ROI0.width*ROI0.height)*NSPX_ROI0;
-
+	m_diam0 = sqrt(frame0.total() / (float)NspxTmp);
 	if (NspxTmp<MAX_SPIKES_FRAME && sqrt(frame0.cols*frame0.rows/NspxTmp)>SPX_DIAM_MIN) spxEngine->Init(frame0, NspxTmp, SPX_WC, Segmentor::NSPX);
 	else {
 		spxEngine->Init(frame0, SPX_DIAM_MIN, SPX_WC, Segmentor::SIZE); cout << "too much spx for memory, limit size with SPX_DIAM_MIN or increase MAX_SPIKES_FRAME" << endl;
