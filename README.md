@@ -6,6 +6,6 @@ SPiKeS-T is a model-free tracker I developed during my master of research. Given
 * OpenCV 3.0 min
 * CUDA
 
-<img src="https://www.dropbox.com/s/xa5klaukg8qjgel/compoTrackingShort.gif?raw=1" width="600">
+<img src="https://www.dropbox.com/s/vdcb9ma29kkqeim/faceOcc.gif?raw=1" width="600">
 
 
