@@ -4,7 +4,7 @@ SPiKeS-T is a model-free tracker I developed during my master of research. Given
 
 ### Libraries required
 * OpenCV 3.0 min
-* CUDA arch >= 3.0
+* CUDA arch 3.0 min
 
 <img src="https://www.dropbox.com/s/vdcb9ma29kkqeim/faceOcc.gif?raw=1" width="600">
 
